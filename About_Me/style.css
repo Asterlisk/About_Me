@@ -1,0 +1,323 @@
+/*Global Config*/
+
+@font-face{
+    font-family: 'Roboto';
+    src:url(Roboto-VariableFont_wdth,wght.ttf) format('ttf');
+    
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+mark {
+    background-color:hsla(0, 100%, 70%, 0.679);
+}
+
+/*-------------------*/
+
+* {
+  box-sizing: border-box;
+  font-family:'Roboto', Helvetica, sans-serif;
+}
+
+/*Body Config*/
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 10fr auto;
+    margin:0;
+    background-image: url(/images/Background_Image.png);
+    background-size: contain;
+}
+
+/*-------------------*/
+
+/*Header Config*/
+header
+{
+    display:flex;
+    flex-direction: row;
+    position:sticky;
+    background-color:hsl(0, 57%, 43%);
+    background-image: url(/images/header_background.png);
+    background-size:contain;
+    top:0;
+    z-index: 2;
+    margin:0;
+    padding: 3%;
+    border-bottom: 5px double hsl(0, 44%, 27%);
+}
+
+header img
+{
+    height:7vh;
+    width:auto;
+}
+
+header h3{
+    margin-left: 10px;
+    color:hsl(0, 83%, 89%);
+    text-shadow: 2px 2px 0 black;
+}
+
+/*-------------------*/
+
+/*Main Body Config*/
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr 1fr;
+}
+
+    /*Profile Picture*/
+    .Profile_Box{
+        display:flex;
+        grid-column:1;
+        grid-row:1;
+        justify-content:center;
+    }
+
+    #profile_pic{
+        margin-top:5vh;
+        position:relative;
+        height:25vh;
+        width:auto;
+        top:10px;
+        left:0px;
+        border-radius:100%;
+    }
+
+    /*-------------------*/
+
+    /*Motto*/
+
+    .Motto {
+        grid-column:2;
+        grid-row:1;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color:hsla(36, 100%, 90%, 0.777);
+        margin: 10vh 5px;
+        padding:10px;
+        border: 3px dotted hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+
+     /*-------------------*/
+
+     /*More*/
+    
+    .More {
+        grid-column: span 2;
+        margin:20px;
+        background-color:hsla(0, 58%, 71%, 0.777);
+        margin: 20px 5px;
+        padding:10px;
+        border: 3px dotted hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+
+
+     /*-------------------*/
+
+     /*Skills And Hobbies*/
+    .skill {
+        grid-column:1;
+        grid-row:3;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:3px;
+        background-color:hsla(36, 100%, 90%, 0.777);
+        border: 3px solid hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+
+    .hobby {
+        grid-column:2;
+        grid-row:3;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:3px;
+        background-color:hsla(36, 100%, 90%, 0.777);
+        border: 3px solid hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+
+    .skill h4{
+        color:hsl(0, 100%, 80%);
+        text-shadow: 2px 2px 0 black;
+    }
+
+    .hobby h4{
+        color:hsl(0, 100%, 80%);
+        text-shadow: 2px 2px 0 black;
+    }
+
+
+     /*-------------------*/
+
+
+/*-------------------*/
+
+/*Footer Notes*/
+footer{
+    display:flex;
+    flex-direction:column;
+    background-color:hsl(0, 57%, 43%);
+    background-image: url(/images/header_background.png);
+    background-size:contain;
+    margin:0;
+    padding: 10px;
+    border-top: 5px double hsl(0, 44%, 27%);
+}
+/*-------------------*/
+
+/*-----------------------------Desktop-------------------------------------*/
+
+@media (min-width: 1024px){
+/*Global Config*/
+p {
+    font-size: 1rem;
+}
+
+/*Body Config*/
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 10fr auto;
+    margin:0;
+    background-image: url(/images/Background_Image.png);
+    background-size: contain;
+}
+
+/*-------------------*/
+
+/*Header Config*/
+header
+{
+    display:flex;
+    flex-direction: row;
+    position:sticky;
+    background-color:hsl(0, 57%, 43%);
+    background-image: url(/images/header_background.png);
+    background-size:contain;
+    top:0;
+    z-index: 2;
+    margin:0;
+    padding: 10px;
+    border-bottom: 5px double hsl(0, 44%, 27%);
+}
+
+header img
+{
+    height:7vh;
+    width:auto;
+    padding-left:5%;
+}
+
+header h3{
+    font-size:1.5rem;
+    margin-left: 10px;
+    color:hsl(0, 83%, 89%);
+    text-shadow: 2px 2px 0 black;
+}
+
+/*-------------------*/
+
+/*Main Body Config*/
+
+main{
+    display:grid;
+    padding:20px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.3fr 1fr;
+}
+
+    /*Profile Picture*/
+    .Profile_Box{
+        display:flex;
+        grid-column:1;
+        grid-row:1;
+        justify-content:center;;
+    }
+    
+    #profile_pic{
+        height:30vh;
+        width:auto;
+        border-radius:100%;
+    }
+    /*-------------------*/
+
+    /*Motto*/
+
+    .Motto {
+        grid-column:2;
+        grid-row:1;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color:hsla(36, 100%, 90%, 0.777);
+        margin: 40px 5px;
+        padding:10px;
+        border: 3px dotted hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+    .Motto h4{
+        font-size: 1rem;
+    }
+
+     /*-------------------*/
+
+     /*Skills And Hobbies*/
+    .skill {
+        grid-column:1;
+        grid-row:3;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:20px 40px;
+        background-color:hsla(36, 100%, 90%, 0.777);
+        border: 3px solid hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+
+    .hobby {
+        grid-column:2;
+        grid-row:3;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin:20px 40px;
+        background-color:hsla(36, 100%, 90%, 0.777);
+        border: 3px solid hsl(0, 44%, 27%);
+        border-radius: 10px;
+    }
+
+    .skill h4{
+        color:hsl(0, 100%, 80%);
+        text-shadow: 2px 2px 0 black;
+    }
+
+    .hobby h4{
+        color:hsl(0, 100%, 80%);
+        text-shadow: 2px 2px 0 black;
+    }
+
+
+     /*-------------------*/
+
+
+/*-------------------*/
+
+}
